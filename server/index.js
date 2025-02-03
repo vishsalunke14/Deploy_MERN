@@ -6,7 +6,13 @@ const employeeModel = require('./models/Employee')
 
 const app = express()
 app.use(express.json())
-app.use(cors())
+app.use(cors(
+     {
+        origin: [""],
+        methods: ["POST", "GET"],
+        credentials: true
+    }
+))
 
 connectDB()
 
