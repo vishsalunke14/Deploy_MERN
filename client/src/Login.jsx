@@ -19,6 +19,10 @@ function Login() {
 
                 navigate('/loginsuccess')
             }
+            else{
+                alert("Please write correct login details")
+                navigate('/login')
+            }
         })
         .catch(err => console.log(err))
     }
