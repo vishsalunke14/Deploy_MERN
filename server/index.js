@@ -16,6 +16,9 @@ app.use(cors(
 
 connectDB()
 
+app.get("/", (req, res) => {
+    res.json("Hello");
+})
 app.post('/register',(req,res)=>{
     employeeModel.create(req.body)
     .then(employee => res.json(employee))
