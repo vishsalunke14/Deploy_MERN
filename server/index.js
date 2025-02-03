@@ -8,7 +8,7 @@ const app = express()
 app.use(express.json())
 app.use(cors(
      {
-        origin: ["https://deploy-mern-frontend-mauve.vercel.app/"],
+        origin: ["https://deploy-mern-frontend-mauve.vercel.app"],
         methods: ["POST", "GET"],
         credentials: true
     }
